@@ -34,7 +34,7 @@
         android:text="Devil Fruit"
         android:textColor="@color/colorTextPrimary"
         android:textSize="22sp"
-        android:textStyle="bold"
+        android:textAppearance="@style/BoldFont"
         android:layout_marginTop="8dp" />
     <TextView
         android:layout_width="wrap_content"
@@ -42,5 +42,5 @@
         android:text="Handbook"
         android:textColor="@color/colorTextPrimary"
         android:textSize="22sp"
-        android:textStyle="bold" />
+        android:textAppearance="@style/BoldFont" />
 </LinearLayout>

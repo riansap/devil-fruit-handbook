@@ -60,15 +60,6 @@
                 android:layout_marginTop="4dp"
                 android:gravity="center" />
 
-            <!-- Jenis Buah -->
-            <TextView
-                android:id="@+id/textViewFruitType"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="16sp"
-                android:layout_marginTop="4dp"
-                android:gravity="center" />
-
             <!-- Deskripsi Buah (bisa panjang) -->
             <TextView
                 android:id="@+id/textViewDescription"
@@ -78,6 +69,46 @@
                 android:layout_marginTop="8dp"
                 android:gravity="center"
                 android:textColor="@color/colorTextSecondary" />
+
+            <!-- Jenis Buah -->
+            <TextView
+                android:id="@+id/textViewFruitType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginTop="4dp"
+                android:gravity="center" />
+
+            <!-- Penjelasan Tipe Buah -->
+            <TextView
+                android:id="@+id/textViewExplanation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:textColor="@color/colorTextSecondary" />
+
+            <!-- Contoh Pengguna Buah -->
+            <TextView
+                android:id="@+id/textViewExamples"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:textColor="@color/colorTextSecondary" />
+
+            <!-- Tombol Bagikan -->
+            <Button
+                android:id="@+id/buttonShare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bagikan"
+                android:textSize="16sp"
+                android:textAppearance="@style/BoldFont"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp" />
 
         </LinearLayout>
     </LinearLayout>

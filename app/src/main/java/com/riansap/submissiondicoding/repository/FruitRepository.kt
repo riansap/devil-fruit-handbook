@@ -29,17 +29,23 @@ class FruitRepository {
             // Log untuk debug: Menampilkan raw data yang diterima dari API
             Log.d("FruitRepository", "API Response: $response")
 
-            // Memetakan raw data dari API ke dalam model Fruit
-            return response.map {
+            // Filter data untuk menghapus item dengan filename yang tidak lengkap
+            val filteredResponse = response.filter {
+                it.filename != null && !it.filename.matches(Regex("https://images\\.api-onepiece\\.com/fruits/"))
+            }
+
+            // Mengonversi data FruitResponse menjadi Fruit model yang sesuai tanpa fail filename
+            return filteredResponse.map {
                 Fruit(
                     id = it.id,
-                    name = it.name,
-                    roman_name = it.roman_name,
-                    type = it.type,
-                    filename = it.filename,
-                    description = it.description
+                    name = it.name ?: "Unknown Name",
+                    roman_name = it.roman_name ?: "Unknown Roman Name",
+                    type = it.type ?: "Unknown Type",
+                    filename = it.filename ?: "Unknown Filename",
+                    description = it.description ?: "No Description Available"
                 )
             }
+
         } catch (e: Exception) {
             // Log untuk menangani error
             Log.e("FruitRepository", "Error fetching fruits", e)

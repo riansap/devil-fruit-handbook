@@ -1,6 +1,4 @@
 
-p
-@app/src/main/java/com/riansap/submissiondicoding/MainActivity.kt,d/1/d198f458b3b3060fe97a8dd8a177f562a9a8f2c7
 D
 app/build.gradle.kts,d/2/d2a4383452aad84a18429a5844d31330a012a9e6
 o
@@ -27,8 +25,6 @@ Napp/src/main/java/com/riansap/submissiondicoding/repository/FruitRepository.kt
 Kapp/src/main/java/com/riansap/submissiondicoding/viewmodel/MainViewModel.kt,e/9/e9b38a71524e3e1372cef90d72d5e12d154ee67b
 u
 Eapp/src/main/java/com/riansap/submissiondicoding/view/MainActivity.kt,4/5/4563f69ef31565f0afa97d2f6e3a64ea2190c821
-u
-Eapp/src/main/java/com/riansap/submissiondicoding/view/FruitAdapter.kt,f/8/f80f66e4c531b21c8041fcb1c3077f8e055b738d
 }
 Mapp/src/main/java/com/riansap/submissiondicoding/view/adapter/FruitAdapter.kt,8/a/8a427a0ddbfa7858ae0a2ef9c8cd622dbb909dca
 ~
@@ -39,3 +35,5 @@ P
  app/src/main/AndroidManifest.xml,8/c/8c55c3ccc257e5907959013f99656e4c8ec3903e
 v
 Fapp/src/main/java/com/riansap/submissiondicoding/view/AboutActivity.kt,8/2/82b5b9baf3ed482454658707dc6b84e0369722f4
+}
+Mapp/src/main/java/com/riansap/submissiondicoding/view/SplashScreenActivity.kt,0/8/08db962ae192d4efca6bd3f41390b845e58033f0
