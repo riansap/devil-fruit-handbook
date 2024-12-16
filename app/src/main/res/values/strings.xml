@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Devil Fruit Handbook</string>
+    <string name="loading">Loading...</string>
+    <string name="no_data">Oops, tidak ada data!</string>
+    <string name="fruit_image">Fruit Image</string>
+    <string name="user_icon">About</string>
+    <string name="profile_picture_description">Profile Picture</string>
+    <string name="app_bar">Application Bar</string>
+
+</resources>

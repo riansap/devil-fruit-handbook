@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <!-- Header bagian atas dengan tombol kembali -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:navigationIcon="@drawable/back_svg"
+        app:titleTextAppearance="@style/ToolbarTitleStyle"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:contentDescription="@string/app_bar" />
+
+    <!-- Kontainer utama dengan informasi -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingTop="32dp">
+
+        <!-- Gambar Profil -->
+        <ImageView
+            android:id="@+id/imageViewProfile"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/profile_picture"
+            android:contentDescription="@string/profile_picture_description"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="8dp"
+            />
+
+        <!-- Nama -->
+        <TextView
+            android:id="@+id/textViewUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rian Saputra"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <!-- Email -->
+        <TextView
+            android:id="@+id/textViewUserEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="riansap@dicoding.com"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+
+</LinearLayout>

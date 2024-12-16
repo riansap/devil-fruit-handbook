@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="fruit"
+            type="com.riansap.submissiondicoding.model.Fruit" />
+    </data>
+
+    <!-- Gunakan CardView untuk mendapatkan efek mirip dengan "kartu" -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="16dp"
+        android:layout_margin="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <!-- Gambar Buah -->
+            <ImageView
+                android:id="@+id/imageViewFruit"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:contentDescription="@string/fruit_image"
+                android:scaleType="centerInside"
+                android:paddingEnd="8dp"/>
+
+            <!-- Informasi Buah -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:paddingStart="8dp">
+
+                <!-- Nama Latin -->
+                <TextView
+                    android:id="@+id/textViewName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{fruit.roman_name}"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:paddingBottom="4dp" />
+
+                <!-- Nama Umum -->
+                <TextView
+                    android:id="@+id/textViewRomanName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{fruit.name}"
+                    android:textSize="14sp"
+                    android:textColor="#757575"/>
+
+                <!-- Jenis Buah -->
+                <TextView
+                    android:id="@+id/textViewFruitType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{fruit.type}"
+                    android:textSize="14sp"
+                    android:textColor="#757575"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</layout>

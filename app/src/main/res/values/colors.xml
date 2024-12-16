@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <!-- Primary Colors -->
+        <color name="colorPrimary">#1E88E5</color> <!-- Biru Cerah -->
+        <color name="colorPrimaryVariant">#1565C0</color> <!-- Biru Lebih Gelap -->
+        <color name="colorOnPrimary">#FFFFFF</color> <!-- Warna teks di atas warna utama -->
+
+        <!-- Background Warna untuk Mode Terang dan Gelap -->
+        <color name="colorBackgroundLight">#E3F2FD</color> <!-- Latar terang dengan nuansa biru muda -->
+        <color name="colorBackgroundDark">#0D47A1</color> <!-- Latar gelap biru tua -->
+
+        <!-- Warna untuk Elemen Interaktif -->
+        <color name="colorAccent">#82B1FF</color> <!-- Biru yang cerah untuk tombol atau elemen tambahan -->
+
+        <!-- Teks -->
+        <color name="colorTextPrimary">#212121</color> <!-- Warna teks utama -->
+        <color name="colorTextSecondary">#757575</color> <!-- Warna teks sekunder -->
+</resources>
