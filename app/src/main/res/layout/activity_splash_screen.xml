@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Halaman Splash Screen
+    Ini adalah halaman awal yang ditampilkan saat aplikasi pertama kali dibuka.
+    Berisi logo aplikasi dan nama aplikasi untuk memperkuat identitas visual.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/colorBackgroundLight">
+
+    <!--
+        Gambar Logo Aplikasi
+        Menampilkan logo aplikasi sebagai elemen visual utama di halaman splash screen.
+    -->
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/devilfruit_handbook_logo"
+        android:contentDescription="@string/app_name" />
+
+    <!--
+        Nama Aplikasi
+        Menampilkan nama aplikasi.
+    -->
+    <TextView
+        android:id="@+id/textViewAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Devil Fruit"
+        android:textColor="@color/colorTextPrimary"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Handbook"
+        android:textColor="@color/colorTextPrimary"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+</LinearLayout>

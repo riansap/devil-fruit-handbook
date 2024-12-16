@@ -8,7 +8,7 @@
             type="com.riansap.submissiondicoding.model.Fruit" />
     </data>
 
-    <!-- Gunakan CardView untuk mendapatkan efek mirip dengan "kartu" -->
+    <!-- Gunakan CardView untuk mendapatkan efek mirip dengan "kartu" sesuai instruksi Submission -->
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

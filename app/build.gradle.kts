@@ -11,7 +11,7 @@ android {
 
     defaultConfig {
         applicationId = "com.riansap.submissiondicoding"
-        minSdk = 30
+        minSdk = 28
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -66,7 +66,7 @@ dependencies {
     implementation("androidx.activity:activity-ktx:1.7.2")
 
     // Material
-    implementation("com.google.android.material:material:1.6.0")
+    implementation("com.google.android.material:material:1.8.0")
 
     // AndroidX Lifecycle ViewModel
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1")
